@@ -39,6 +39,10 @@
   cursor: pointer;
 }
 
+.keywords-tags .badge{
+  background-color: red;
+}
+
 
 
 /* ------------------------------------------------ for new Profile inside Main---------------------------------*/
