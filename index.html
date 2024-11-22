@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <title>Responsive Dashboard Page</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+  <!-- ---------------------------------------Navbar ----------------------------------------------------------->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light px-3">
+    <button id="sidebarToggle" class="btn btn-outline-black d-lg-none me-3">
+      <i class="fas fa-bars"></i>
+    </button>
+    <img style="width: 50px;" src="./img/logo.png" alt="Not found">
+    <a class="navbar-brand fw-bold" href="./img/logo.png">FINDCOLLAB</a>
+    <form class="d-none d-md-flex  position-relative" style="margin-left: 74px;">
+  <input 
+    type="text" 
+    class="form-control pe-5" 
+    placeholder="What service are you looking for today?">
+  <button 
+    type="submit" 
+    class="position-absolute top-0 end-0 border-0 bg-transparent h-100 px-3">
+    <i class="fas fa-search"></i>
+  </button>
+</form>
+
+    <div class="ms-auto d-flex align-items-center">
+        <button class="btn btn-light me-2"><i class="fas fa-bell"></i></button>
+        <button class="btn btn-light me-2"><i class="fas fa-envelope"></i></button>
+        <button class="btn btn-light me-2"><i class="fas fa-heart"></i></button>
+      <button class="btn btn-light"><i class="fas fa-user-circle"></i></button>
+    </div>
+  </nav>
+
+  <!-- ---------------------------------------------Sidebar ------------------------------------------------------>
+  <div class="container-fluid">
+    <div class="row">
+      <nav id="sidebar" class="col-lg-2 bg-light sidebar" >
+        <div class="d-flex flex-column align-items-start p-3">
+          <ul class="nav flex-column" style="gap: 10px; ">
+            <li class="nav-item"><a  href="#" class="nav-link"><i class="fas fa-start"></i> Start</a></li>
+            <li class="nav-item"><a href="#" class="nav-link"><i class="fas fa-home"></i> Dashboard</a></li>
+            <li class="nav-item"><a href="#" class="nav-link"><i class="fas fa-clipboard"></i> My Proposals</a></li>
+            <li class="nav-item"><a href="#" class="nav-link"><i class="fas fa-heart"></i> Saved</a></li>
+            <li class="nav-item"><a href="#" class="nav-link"><i class="fas fa-envelope"></i> Message</a></li>
+            <li class="nav-item"><a href="#" class="nav-link"><i class="fas fa-star"></i> Reviews</a></li>
+            <li class="nav-item"><a href="#" class="nav-link"><i class="fas fa-file-invoice-dollar"></i> Invoice</a></li>
+            <li class="nav-item"><a href="#" class="nav-link"><i class="fas fa-wallet"></i> Payouts</a></li>
+            <li class="nav-item"><a href="#" class="nav-link"><i class="fas fa-file-alt"></i> Statements</a></li>
+          </ul>
+        </div>
+      </nav>
+      
+<!-- ---------------------------------Main Contain------------------------------- -->
+      <main class="col-lg-10">
+        <h1>Profile</h1>
+        <div class="container mt-4">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card p-3">
+                <div class="d-flex align-items-center">
+                  <img src="./img/aarif.jpg" alt="Profile Image"  width="130" >
+                  <div>
+                    <h5 class="fw-bold">Md Aarif Raza <i class="fas fa-check-circle text-primary"></i></h5>
+                    <p>4.5 <i class="fas fa-star text-warning"></i></p>
+                  </div>
+                </div>
+                <div class="mt-3">
+                  <p><i class="fab fa-instagram text-danger"></i> @therock</p>
+                  <p>Hindi, English, Tamil</p>
+                  <p><i class="fas fa-map-marker-alt text-danger"></i> Mumbai, India</p>
+                  <p>Keywords: Business, Cosmetics</p>
+                  <hr>
+                  <div class="keywords-section mt-3">
+                 <p><i class="fas fa-tags text-danger"></i> Keywords</p>
+                   <div class="keywords-tags">
+                    <span class="badge bg-light text-dark">Keyword 1</span>
+                    <span class="badge bg-light text-dark">Business</span>
+                    <span class="badge bg-light text-dark">Business</span>
+                    <span class="badge bg-light text-dark">Business</span>
+                    <span class="badge bg-light text-dark">Business</span>
+                    <span class="badge bg-light text-dark">Keyword 6</span>
+                </div>
+                <p class="mt-2 description">
+                 Passionate [Your Niche/Interest] | Creative Soul [Any other personal identifiers]. 
+                 Bringing [your niche/interest] to life through captivating visuals and inspiring stories.
+                </p>
+                <hr>
+               <p class="last-update">Last data update: Feb 26, 2024</p>
+               </div>
+
+                  
+                  <p class="box1">Budget: ₹500K</p>
+                  
+                </div>
+              </div>
+            </div>
+            <div class="col-md-8">
+              <div class="card p-3">
+                <div class="d-flex justify-content-around text-center">
+                  <div class="box">
+                    <h4>25M</h4>
+                    <p>Instagram Followers</p>
+                  </div>
+                  <div class="box">
+                    <h4>25M</h4>
+                    <p>YouTube Subscriptions</p>
+                  </div class="box">
+                  <div class="box">
+                    <h4>25M</h4>
+                    <p>Blog Average Visits</p>
+                  </div class="box">
+                  <div class="box">
+                    <h4>128</h4>
+                    <p>Projects Overview</p>
+                  </div>
+                  
+                </div>
+                <div class="profile-container">
+  <div class="header">
+    <div class="profile-info">
+      <img src="./img/inside.jpg" alt="Profile Picture" class="profile-pic">
+      <div>
+        <h2>boatxaman <i class="fas fa-check-circle text-primary"></i></h2>
+        <p>231 posts | <strong>1.3M followers</strong> | 853 following</p>
+        <p>Aman Gupta<br>AG The OG. Shark @sharktank.india S1, S2, S3<br>Co-Founder @boat.nirvana</p>
+      </div>
+    </div>
+    <div class="header-actions">
+      <i class="fas fa-download"></i>
+      <i class="fas fa-share-alt"></i>
+    </div>
+  </div>
+
+  <div class="stats-section">
+    <div class="engagement">
+      <h3>Profile Engagement</h3>
+      <div style="display: flex;">
+      <ul>
+        <li>Average Likes: <strong>286K</strong></li>
+        <li>Reels Views: <strong>12K</strong></li>
+        <li>Story Views: <strong>663K</strong></li>
+        <li>Comments: <strong>363K</strong></li>
+      </ul>
+      <div class="engagement-bar">
+        <img width="150px" src="./img/circle.avif" alt="Not found">
+      </div>
+      </div>
+      <p style="background-color: beige;">Achieving 5%+ engagement is good; 10%+ indicates strong performance.</p>
+    </div>
+    <div class="campaign">
+      <h3>Campaign History</h3>
+      <img src="./img/campiagn.jpg" alt="Not found">
+      <p style="background-color: beige;">No campaigns to present at this moment</p>
+    </div>
+  </div>
+
+  <div class="commercials">
+    <h3>My Commercials</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Item</th>
+          <th>Price (₹)</th>
+          <th>Comments</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1. Rate Per Reel</td>
+          <td>₹10,000</td>
+          <td>Comment demo content for this creative.</td>
+        </tr>
+        <tr>
+          <td>2. Rate Per Static Story</td>
+          <td>₹5,000</td>
+          <td>Comment demo content for this creative.</td>
+        </tr>
+        <tr>
+          <td>3. Rate Per Static Post</td>
+          <td>₹30,000</td>
+          <td>Comment demo content for this creative.</td>
+        </tr>
+        <tr>
+          <td>4. Rate Per Video Story</td>
+          <td>₹70,000</td>
+          <td>Comment demo content for this creative.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+              </div>
+            </div>
+          </div>
+
+        
+        </div>
+      </main>
+    </div>
+  </div>
+
+  <script src="Js/script.js">
+    
+  </script>
+</body>
+</html>
